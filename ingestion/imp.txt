@@ -1,0 +1,1 @@
+data collection path : NSE (official) → Yahoo Finance → yfinance → our CSV file
