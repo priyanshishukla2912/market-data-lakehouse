@@ -1,5 +1,5 @@
 # Day 1 notes
-
+data collection path : NSE (official) → Yahoo Finance → yfinance → our CSV file
 ## Data engineering vocabulary
 - ETL: transform before loading. ELT: load raw first, transform after.
 - Data lake: cheap file storage. Data warehouse: structured tables for fast queries.

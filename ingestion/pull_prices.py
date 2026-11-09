@@ -15,8 +15,7 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 for ticker in TICKERS:
     # auto_adjust=False keeps BOTH "Close" and "Adj Close" columns
-    df = yf.download(ticker, start="2020-01-01", auto_adjust=False, progress=False)
-
+    df = yf.download(ticker, start="2020-01-01", end="2026-11-09", auto_adjust=False, progress=False)
     # Newer yfinance versions return two-level column names. Flatten them.
     if isinstance(df.columns, pd.MultiIndex):
         df.columns = df.columns.get_level_values(0)
